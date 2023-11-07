@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Формы. Отправляем данные на сервер</title>
+    <link rel="stylesheet" href="./css/styleform.css">
+</head>
+<body>
+  <div class="header"><h>Формы. Отправляем данные на сервер</h></div>
+<div class="main">
+  <form action="https://www.google.com/" method="get">
+    <div>
+      <p>Поиск: <input type="Text"  name="q" value="search"></p>
+      <p>ФИО: <input type="Text" name="FIO" size=60  value="Иванов Иван Иванович"></p>
+      <p>Возраст: <input type="Number" name="age" size=20 value="0"></p>
+      <p>Телефон: <input type="Text" name="phone" size=10  value="+79999999999"></p>
+      <p>Почта: <input type="Text" name="email" size=60  value="abc@example.com"></p>
+    <p>Пункт выдачи:
+        <input type="Radio" name="place" value="Chertanovo">Чертаново
+        <input type="Radio" name="place" value="Rostokino">Ростокино
+        <input type="Radio" name="place" value="OhotniyRyad">Охотный ряд
+        <input type="Radio" name="place" value="FilPark">Филевский парк
+        <input type="Radio" name="place" value="Sviblovo">Свиблово
+    </p>
+
+    <p>Какая возникла проблема:
+        <input type="Checkbox" name="problem"  value="waiting" checked> Длительное ожидание
+        <input type="Checkbox"  name="problem"   value="badthing" checked> Плохое качество товара
+        <input type="Checkbox" name="problem" value="badservice" checked> Плохое обслуживание
+        <input type="Checkbox" name="problem" value="other" checked> Другое
+    </p>
+
+    <p> Как с вами удобней связаться?
+        <select name="languages">
+            <OPTION value="phone">По телефону</OPTION>
+            <OPTION value="email">По почте</OPTION>
+        </select>
+    </p>
+
+    <p> Опишите ситуацию подробно:
+        <br>
+        <TEXTAREA cols=80 name="textarea" rows=4>Ваша жалоба</TEXTAREA>
+    </p>
+
+    <p>Дата посещения: <input type="date" name="date"  value='2020-01-01'></p>
+    <p>Пароль: <input type="Password" name="password" size=9  value="123"></p>
+    
+    <p>Название файла: <input type="Техт" name="000_file_name" value="Н_ОW_Г_326510_1_Ivanov.txt" size='30'></p>
+
+    <p> Тип записи в файл:<select name="010_mode">
+        <OPTION value="a">a - дозаписать в файл</OPTION>
+        <OPTION value="w">w - очисить файл и записать в файл</OPTION>
+    </select></p>
+
+    <input type="hidden" name="function"  value="page">
+    <input type="hidden" name="page_id"  value="3">
+
+    <p>
+        <input type="Reset"  name="Reset"  value="Обновить">
+        <input type="Submit" name="submit"  value="Отправить">
+    </p>  
+    </div>
+  </form>
+</div>
+
+</body>
+</html>

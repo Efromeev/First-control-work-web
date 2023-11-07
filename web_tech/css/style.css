@@ -1,0 +1,93 @@
+
+/* lato-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/lato-v24-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* lato-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/lato-v24-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* lato-900 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/lato-v24-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  html{
+    box-sizing:border-box ;
+  }
+  *,*::before, *::after{
+    box-sizing: inherit;
+  }
+
+body{
+  font-family: 'Lato';
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: normal;
+  color: #000;
+}
+
+.link {
+  font-family: 'lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 118.5%;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  color: black 
+}
+
+ 
+  a {
+    position: relative;
+    text-decoration: none;
+    color: #555;
+  }
+  
+  a:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    border-bottom: 3px solid rgb(215, 87, 13); 
+    transition: all 0.5s;
+  }
+  
+  a:hover:before {
+    width: 100%;
+  }
+  .demolink {
+    font-family: 'lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 118.5%;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    color: black 
+  }
+.image{
+  max-width: 100px;
+  max-height: 100px;
+}
+.image2{
+  max-width: 400px;
+  max-height: 400px;
+}
+
+

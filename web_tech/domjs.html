@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/alg.css">
+</head>
+<body>
+    <div class="header"><h>DOM_JS. Считываем информацию из DOM</h></div>
+    <ul class="list">
+        <li class="item">
+            <a href="domjs.html",target="_blank" class="link">DOM_JS. Считываем информацию из DOM</a>
+        </li>
+        <li class="item">
+            <a href="latin.html" class="link">Изменяем кириллицу на латиницу по клику</a>
+        </li>
+        <li class="item">
+            <a href="alg.html" class="link">Решение алгоритмической задачи</a>
+        </li>
+    </ul>
+    <p>Ефромеев Леонид Максимович</p>
+    <p>25.04.2004</p>
+    <script>
+    const a = document.getElementsByTagName("p")[0].innerHTML
+    const b = document.getElementsByTagName("p")[1].innerHTML
+    console.log(a)
+    console.log(b)
+    </script>
+    <img src="./img/DOM_JS.jpg" alt="">
+</body>
+</html>
